@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Similarity - Slecht vs. Goed</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      /* ❌ Slecht: Alle knoppen hebben een andere stijl */
+      .bad-buttons button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .bad-buttons .primary {
+        background-color: red;
+        color: white;
+        border: 3px solid darkred;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .bad-buttons .secondary {
+        background-color: yellow;
+        color: black;
+        border: 2px dashed black;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .bad-buttons .tertiary {
+        background-color: green;
+        color: white;
+        border: 1px solid lime;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px rgba(0, 255, 0, 0.5);
+      }
+
+      /* ✅ Goed: Consistente knoppen met hiërarchie */
+    </style>
+  </head>
+  <body>
+    <h2>Similarity</h2>
+    <h3>❌ Slecht voorbeed</h3>
+    <div class="bad-buttons">
+      <button class="primary">Belangrijk</button>
+      <button class="secondary">Minder belangrijk</button>
+    </div>
+
+    <h3>✅ Maak er met CSS een goed voorbeeld van</h3>
+    <div class="good-buttons">
+      <button class="button primary">Belangrijk</button>
+      <button class="button secondary">Minder belangrijk</button>
+    </div>
+  </body>
+</html>

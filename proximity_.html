@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proximity Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      /* ❌ Slecht: Alles staat op één lijn, geen duidelijke structuur */
+      .bad-form label {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .bad-form input {
+        display: inline-block;
+        width: 200px;
+      }
+
+      /* ✅ Goed: Labels en inputvelden gegroepeerd per veld */
+    </style>
+  </head>
+  <body>
+    <h3>❌ Form - Proximity</h3>
+    <form class="bad-form">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" />
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" />
+      <label for="message">Bericht:</label>
+      <input type="text" id="message" />
+    </form>
+
+    <h3>
+      ✅ Maak er met CSS (en evt. HTML) een goed voorbeeld van - Proximity
+    </h3>
+    <form class="bad-form">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" />
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" />
+      <label for="message">Bericht:</label>
+      <input type="text" id="message" />
+    </form>
+  </body>
+</html>
